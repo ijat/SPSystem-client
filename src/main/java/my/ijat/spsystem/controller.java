@@ -152,11 +152,6 @@ public class controller implements Initializable {
         }
     }
 
-    @FXML private void stop(ActionEvent event) throws IOException {
-        if (this.timeline != null) timeline.stop();
-        regBack(event);
-    }
-
     @FXML
     private void exxit(ActionEvent e) {
         System.exit(0);

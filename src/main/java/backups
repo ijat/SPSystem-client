@@ -1,3 +1,97 @@
+
+!! reg
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my.ijat.spsystem.controller">
+    <children>
+        <AnchorPane prefHeight="2.0" prefWidth="300.0" />
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="113.0" prefWidth="300.0">
+            <children>
+                <HBox prefHeight="41.0" prefWidth="300.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="69.0" text="Username" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="un" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                            <HBox.margin>
+                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="54.0" prefWidth="300.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="69.0" text="Password" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                            </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="pw" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                            <HBox.margin>
+                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </PasswordField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="41.0" prefWidth="300.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="69.0" text="Full Name" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fn" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                            <HBox.margin>
+                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="41.0" prefWidth="300.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="69.0" text="Box ID" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                            </HBox.margin>
+                        </Label>
+                  <TextField fx:id="ir" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                    </children>
+                </HBox>
+            </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+        </VBox>
+        <Button defaultButton="true" mnemonicParsing="false" onAction="#regOK" prefHeight="25.0" prefWidth="603.0" text="OK">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="regBtn" cancelButton="true" mnemonicParsing="false" onAction="#regBack" prefHeight="25.0" prefWidth="537.0" text="Back">
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>
+
+!! logged
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
@@ -136,5 +230,73 @@
             </Button>
          </children>
       </HBox>
+   </children>
+</VBox>
+
+
+!! login
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="173.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my.ijat.spsystem.controller">
+   <children>
+      <AnchorPane prefHeight="2.0" prefWidth="300.0" />
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="113.0" prefWidth="300.0">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="69.0" text="Username" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="logun" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Reflection fraction="0.6" topOpacity="0.35" />
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="69.0" text="Password" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="13.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="logpw" alignment="CENTER" prefHeight="25.0" prefWidth="189.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Reflection fraction="0.6" topOpacity="0.35" />
+                     </effect>
+                  </PasswordField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#logOK" prefHeight="25.0" prefWidth="603.0" text="Log In">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#regEvent" prefHeight="25.0" prefWidth="537.0" text="Register">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </Button>
    </children>
 </VBox>
