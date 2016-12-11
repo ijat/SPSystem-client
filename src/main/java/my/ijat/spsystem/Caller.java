@@ -2,20 +2,17 @@ package my.ijat.spsystem;
 
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.SSLContexts;
 import org.apache.http.conn.ssl.TrustSelfSignedStrategy;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.json.simple.parser.ParseException;
 
 import javax.net.ssl.SSLContext;
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class Caller {
@@ -50,15 +47,12 @@ public class Caller {
                 .asJson();
 
         //System.out.println(jsonResponse.getBody());
-        //System.out.println(jsonResponse.getBody().toString());
+        System.out.println(jsonResponse.getBody().toString());
 
         org.json.simple.parser.JSONParser jp = new org.json.simple.parser.JSONParser();
         org.json.simple.JSONObject json = (org.json.simple.JSONObject) jp.parse(jsonResponse.getBody().toString());
 
         Long counter = (Long) json.get("counter");
-
-        /*Map<String, String> m1 = new HashMap<String, String>();
-        m1.put("counter",counter.toString());*/
 
         if (counter.toString().length() <= 0) throw new Exception();
         return counter.toString();
@@ -73,7 +67,7 @@ public class Caller {
                     .header("ir_id", ir)
                     .asJson();
             //jsonResponse.getBody().toString();
-            //System.out.println(jsonResponse.getBody().toString());
+            System.out.println(jsonResponse.getBody().toString());
 
             //jsonResponse.getBody()
             org.json.simple.parser.JSONParser jp = new org.json.simple.parser.JSONParser();
@@ -94,7 +88,7 @@ public class Caller {
                     .asJson();
 
             //System.out.println(jsonResponse.getBody());
-            //System.out.println(jsonResponse.getBody().toString());
+            System.out.println(jsonResponse.getBody().toString());
 
             org.json.simple.parser.JSONParser jp = new org.json.simple.parser.JSONParser();
             org.json.simple.JSONObject json = (org.json.simple.JSONObject) jp.parse(jsonResponse.getBody().toString());
